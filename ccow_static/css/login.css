@@ -1,0 +1,77 @@
+/*
+@login
+@author Polly
+@email pollyng@foxmail.com
+*/
+
+body{background:#f5f5f5 !important;color: #666;}
+.login{
+	float: none;
+	margin:0 auto ;
+	margin-top: 8em;
+	width: 300px;
+	height: 180px;
+	padding: 2em;
+	border: 1px solid #eee;
+	background-color: #fff;
+	border-radius: 5px;
+	-moz-border-radius:5px; /* 老的 Firefox */
+	box-shadow: 1px 1px 1px #ededed;
+
+}
+.login>h1{
+	text-align: center;
+	font-size: 2em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px solid #efefef;
+}
+.inp-info{
+	margin: 1em 1em 0 0 ;
+	line-height: 2em;
+
+}
+.inp-info>li{
+	float: right;
+}
+.usn,.pwd,.input-conf{
+
+	border: 1px solid #eee;
+}
+.input-conf{
+	width: 145px;
+}
+.usn:focus,.pwd:focus,.input-conf:focus{
+	border-color: #9ff;
+	box-shadow: 0 0 2px #9ff;
+}
+
+/*验证码*/
+.pic-conf{
+	position: relative;
+	top: 6px;
+	float: right;
+	width: 50px;
+	height: 20px;
+	background-color: #00e;
+}
+/*button*/
+.btn>li:nth-child(1){
+	clear:both;
+	margin-left: 5em;
+}
+.btn>li{
+	float: left;
+}
+.btn-login,.btn-logup{
+	margin: 0.4em;
+	height: 30px;
+	width: 48px;	
+}
+.btn-login{
+	background-color: #0cf;
+	color: #fff;
+}
+.btn-logup{
+	border: 1px solid #efefef;
+	color: #666;
+}

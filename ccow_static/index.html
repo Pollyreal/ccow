@@ -3,43 +3,44 @@
 <head>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/page-back.css">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<title>后台</title>
 </head>
 <body>
 	<header>
 		<div class="header-wrap fm970">
-			<img class="site-logo" src="images/logo.png"/>
-			<img class="site-back" src="images/end_03.png"/>
-			<div class="wrap-welcome">
-				<p>欢迎回来！</p>
-			</div>
+			<ul>
+				<li class="site-logo"></li>
+				<li class="wrap-welcome">
+
+					<p>欢迎回来！</p>
+				</li>
+			</ul>
 		</div>
 	</header>
 	<div id="content" >
 		<div class="fm970">
 			<div class="left-nav" >
 				<ul>
-					<li>用户管理
+					<li><div id="plate-user"></div>
 						<ul>
 							<li><div id="cat-user"></div><a href="">用户</a></li>
 							<li><div id="cat-auth"></div><a href="">权限说明</a></li>
 						</ul>
 					</li>
-					<li>版块管理
+					<li><div id="plate-plate"></div>
 						<ul>
 							<li><div id="cat-plate"></div><a href="">版块</a></li>
 						</ul>
 					</li>
-					<li>新闻管理
+					<li><div id="plate-news"></div>
 						<ul>
 							<li><div id="cat-addnews"></div><a href="">添加内容</a></li>
 							<li><div id="cat-visible"></div><a href="">可见内容</a></li>
 							<li><div id="cat-invisible"></div><a href="">隐藏内容</a></li>
 						</ul>
 					</li>
-					<li>留言管理
+					<li><div id="plate-comments"></div>
 						<ul>
 							<li><div id="cat-comm"></div><a href="">留言管理</a></li>
 						</ul>
@@ -47,14 +48,38 @@
 				</ul>
 			</div>
 			<div class="right-main">
-				<div>p1</div>
-				<div>p2</div>
+				<div class="intro"><h6>用户信息</h6><p>用户的注册、删除、权限更改。</p>
+				</div>
+				<div class="search">
+					<!-- <h6>搜索</h6> -->
+					<input class="s-input" />
+					<input type="submit" class="s-btn" value="" />
+				</div>
+				<div class="show-users">
+				<input type="submit" value="新增用户" class="adduser"/>
+					<table class="tb-users">
+						<thead>
+							<tr>
+								<th>用户名</th>
+								<th>用户权限</th>
+								<th></th>							
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>admin</td>
+								<td>11</td>
+								<td>2333</td>								
+							</tr>
+						</tbody>
+					</table>
+					
+				</div>
 			</div>
 		</div>
 	</div>
 	<footer>
 		<p>@2015 yicha</p>
 	</footer>
-
 </body>
 </html>
