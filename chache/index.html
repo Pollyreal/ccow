@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<style>
+/*重置*/
+body{margin:0;}
+a{text-decoration:none;}
+img{margin:0;padding:0;border:none;display:block;}
+ul{margin:0;padding:0;}
+li{margin:0;padding:0;list-style:none;}
+p{padding:0;margin:0;}
+dl{margin:0;padding:0;}
+dd{margin:0;padding:0;}
+
+/*顶部导航栏*/
+.top_nav{background-color:#ccc2b8;border-top:solid 1px #900;}
+.top_nav_1{width:980px;margin:auto;overflow:hidden;}
+.top_nav_1_1{float:right;}
+.top_nav_1_1_1{display:block;float:left;line-height:36px;color:#fff;font-family:微软雅黑;font-size:14px;}
+.top_nav_1_1_2{display:block;float:left;line-height:36px;color:#fff;font-family:微软雅黑;font-size:14px;margin-right:20px;}
+.top_nav a:hover{color:#900;}
+
+/*logo*/
+.logo_box_1{width:980px;margin:auto;overflow:hidden;}
+.logo_box_1_1{padding:21px 0;float:left;}
+.logo_box_1_2{float:right;margin-top:38px;}
+.logo_box_1_2 *{float:left;}
+.logo_box_1_2_2{height:25px;width:328px;overflow:hidden;}
+.logo_box_1_2_2_1 a{line-height:25px;text-align:center;color:#333;}
+
+/*导航栏*/
+.nav_box{width:980px;margin:auto;overflow:hidden;}
+.nav_box li{float:left;width:140px;border-top:solid 1px #ccc;}
+.nav_box a{display:block;color:#333;font-size:18px;line-height:36px;text-align:center;font-family:微软雅黑;}
+/*.nav_box .currentLi{border-top:solid 3px #ccc;}*/
+/*.nav_box .currentA{color:#900;}*/
+.nav_box li:hover{border-top:solid 1px #333;}
+.nav_box a:hover{color:#900;}
+
+/*广告栏*/
+.banner_box{width:980px;margin:auto;position:relative;}
+.ctrl{position:absolute;top:380px;left:590px;}
+.ctrl a{float:left;margin-right:10px;width:120px;height:12px;background-color:#09F;border-radius:6px;}
+.ctrl .currentA2{background-color:#fff;}
+
+/*公司简介*/
+.CompanyProfile{width:980px;margin:auto;margin-top:36px;}
+.CompanyProfile_box a{display:block;font-size:18px;margin-right:20px;color:#333;line-height:36px;font-family:微软雅黑;}
+.CompanyProfile_box2{background-image:url(images/CompanyProfile_box2.png);height:1px;}
+.CompanyProfile_box3{overflow:hidden;}
+.CompanyProfile_box3_1{margin-left:10px;margin-top:10px;float:left;margin-right:10px;}
+.CompanyProfile_box .CompanyProfile_box3_2{float:left;}
+.CompanyProfile_box3_2{padding-right:10px;padding-top:10px;}
+.CompanyProfile_box3_2 a{line-height:22px;font-size:14px;color:#333;letter-spacing:1px;font-family:微软雅黑;}
+
+/*我们为您提供的服务*/
+.service_box{width:980px;margin:auto;margin-top:36px;}
+.service{font-size:18px;color:#333;line-height:36px;font-family:微软雅黑;}
+.service2{background-image:url(images/CompanyProfile_box2.png);height:1px;}
+.service3{overflow:hidden;}
+.service3 a{float:left;}
+.service3 img{margin-right:52px;margin-top:10px;} 
+.service3 .currentImg1{margin-right:0;}
+
+/*他们选择了我们*/
+.choice_box{width:980px;margin:auto;margin-top:36px;overflow:hidden;}
+.choice{font-size:18px;color:#333;line-height:36px;font-family:微软雅黑;}
+.choice2{background-image:url(images/CompanyProfile_box2.png);height:1px;}
+.choice3{overflow:hidden;margin-top:10px;}
+.choice3_box{width:950px;height:110px;overflow:hidden;}
+.choice3 .choice3_box img{margin-right:10px;}
+.choice3 *{float:left;}
+
+
+
+/*页脚*/
+.footer_box{background-color:#ccc2b8;margin-top:36px;}
+.footer{width:980px;margin:auto;overflow:hidden;height:252px;}
+.footer *{float:left;}
+.footer_1 *{float:left;}
+.footer_1{margin-left:74px;}
+.footer_1 a{display:block;color:#685c52;font-weight:bold;font-size:14px;margin-top:80px;font-family:微软雅黑;}
+.footer_2{border-right:solid 2px #685c52;width:80px;height:100px;margin-top:40px;}
+.contact_box{margin-top:54px;color:#685c52;font-weight:bold;font-size:14px;line-height:22px;margin-left:10px;font-family:微软雅黑;}
+.copy_box{margin-top:40px;}
+.copy_box a{color:#685c52;font-size:14px;line-height:22px;font-family:微软雅黑;margin-left:286px;}
+</style>
+<script src="jquery.js"></script>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<!--顶部导航-->
+<div class="top_nav">
+	<div class="top_nav_1">
+    	<div class="top_nav_1_1">
+    	<a href="" class="top_nav_1_1_1">中文版&nbsp;｜&nbsp;</a>
+        <a href="" class="top_nav_1_1_2">英文版</a>
+        </div>
+    </div>
+</div>
+
+<!--logo-->
+<div class="logo_box">
+	<div class="logo_box_1">
+    	<a href="" class="logo_box_1_1"><img src="images/logo.png"></a>
+        <div class="logo_box_1_2">
+        	<img class="logo_box_1_2_1" src="images/news.png">
+            <div class="logo_box_1_2_2">
+            	<dl class="logo_box_1_2_2_1">
+            		<dd><a href="">欢迎宁波海迈克叉车入驻全球叉车网</a></dd>
+                	<dd><a href="">欢迎欧能搬运设备入驻全球叉车网</a></dd>
+                	<dd><a href="">欢迎合肥东耀电子入驻全球叉车网</a></dd>
+                	<dd><a href="">欢迎汉德贝尔入驻全球叉车网</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+function runUp(){
+	$(".logo_box_1_2_2_1").animate({marginTop:-25},1000,
+function(){
+			$(".logo_box_1_2_2_1").css({marginTop:0});
+			$(".logo_box_1_2_2_1 dd:first").insertAfter($(".logo_box_1_2_2_1 dd:last"));
+		})
+}
+var timer = setInterval(runUp,4000);
+$(".logo_box_1_2_2_1 dd").hover(function(){
+	clearInterval(timer);	
+},function(){
+	timer = setInterval(runUp,4000);
+})
+</script>
+
+<!--导航-->
+<div>
+	<ul class="nav_box">
+    	<li><a href="">首页</a></li>
+        <li><a href="">公司简介</a></li>
+        <li><a href="">易叉商城</a></li>
+        <li><a href="">入驻易叉</a></li>
+        <li><a href="">新闻资讯</a></li>
+        <li><a href="">联系我们</a></li>
+        <li><a href="">客户反馈</a></li>
+    </ul>	
+</div>
+
+<!--广告栏-->
+<div class="banner_box">
+	<div class="banner">
+		<img src="images/banner_1.png">
+        <img src="images/banner_2.png">
+        <img src="images/banner_3.png">
+    </div>
+    <div class="ctrl">
+    	<a class="currentA2" href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+    </div>
+</div>
+<script>
+$(".banner img").hide();
+$(".banner img:eq(0)").show();
+var n=0;
+function run(){
+	if(n<$(".banner img").length-1){
+		n=n+1;
+	}else{
+		n=0;}
+	$(".banner img").hide();
+	$(".banner img:eq("+n+")").show();
+	$(".ctrl a").removeClass("currentA2");
+	$(".ctrl a:eq("+n+")").addClass("currentA2");
+}
+var timer = setInterval(run,2000);
+$(".banner").hover(function(){
+	clearInterval(timer);
+},function(){
+	timer=setInterval(run,2000);
+});
+$(".ctrl a").mouseover(function(){
+	n=$(".ctrl a").index(this);
+	$(".banner img").hide();
+	$(".banner img:eq("+n+")").show();
+	$(".ctrl a").removeClass("currentA2");
+	$(".ctrl a:eq("+n+")").addClass("currentA2");
+})
+</script>
+
+<!--公司简介-->
+<div class="CompanyProfile">
+	<div class="CompanyProfile_box"><a href="">公司简介</a></div>
+    <div class="CompanyProfile_box2"></div>
+    <div class="CompanyProfile_box3">
+    	<img class="CompanyProfile_box3_1" src="images/CompanyProfile.png">
+        <div class="CompanyProfile_box3_2">
+        	<a href=""> 宁波易叉网络科技有限公司是一家专业的叉车系列产品电子商务平台运营商。有着多年来植根于传统线下叉车系列产品代理、零售及服务的实战积累，精于网络分销实战，有着丰富的IT服务经验。打造中国最成熟、最易用的网络叉车产品电子商务平台，并与叉车行业及IT业内大多数平台、企业、咨询机构建立了战略合作伙伴关系，致力为传统与新兴的叉车企业提供电子商务整体解决方案，同时领先行业，推进B2B\B2C\O2O和移动端项目进程，助力企业打造PC端、移动端、实体门店端三端合一的P.M.S零售模式，迅速铺设线上线下全渠道战略布局，引领叉车企业和客户的供需关系变革，让叉车市场无处不在。“易叉”秉承：“成就别人造就自己”的理念，打造华东、华北、华南三大运营基地，分设代理商、办事处，全面提升服务质量，始终贯彻全渠道战略思想，帮助叉车企业打破传统销售瓶颈，造就一批领先行业的品牌叉车企业，并使之成为客户叉车采购的最易用平台。</a>
+ 		</div>
+    </div>
+</div>
+
+<!--我们为您提供的服务-->
+<div class="service_box">
+	<div class="service">我们为您提供的服务</div>
+    <div class="service2"></div>
+    <div class="service3">
+    	<a href=""><img src="images/service.png"></a>
+        <a href=""><img src="images/service.png"></a>
+        <a href=""><img src="images/service.png"></a>
+        <a href=""><img src="images/service.png"></a>
+        <a href=""><img src="images/service.png"></a>
+        <a href=""><img class="currentImg1" src="images/service.png"></a>
+    </div>
+</div>
+
+<!--他们选择了我们-->
+<div class="choice_box">
+	<div class="choice">他们选择了我们</div>
+    <div class="choice2"></div>
+    <div class=choice3>
+    	<div class="btn_left"><img src="images/choice_2.png"></div>
+    	<div class="choice3_box">
+        	<div class="photo">
+    			<a href=""><img src="images/choice.png"></a>
+        		<a href=""><img src="images/choice.png"></a>
+       	 		<a href=""><img src="images/choice.png"></a>
+        		<a href=""><img src="images/choice.png"></a>
+        		<a href=""><img src="images/choice.png"></a>
+        		<a href=""><img src="images/choice.png"></a>
+        		<a href=""><img src="images/choice.png"></a>
+        		<a href=""><img src="images/choice.png"></a>
+                <a href=""><img src="images/choice.png"></a>
+                <a href=""><img src="images/choice.png"></a>
+                <a href=""><img src="images/choice.png"></a>
+                <a href=""><img src="images/choice.png"></a>
+                <a href=""><img src="images/choice.png"></a>
+                <a href=""><img src="images/choice.png"></a>
+                <a href=""><img src="images/choice.png"></a>
+                <a href=""><img src="images/choice.png"></a>
+            </div>
+    	</div>
+   	 	<div class="btn_right"><img src="images/choice_3.png"></div>
+    </div>
+</div>
+<script>
+var m=0;
+$(".photo").width(120*$(".photo img").length);
+function right(){
+	if(m<8){
+		m=m+1;
+	}else{
+		$(".photo").css({marginLeft:0});
+		m=1;
+	}
+	$(".photo").animate({marginLeft:-120*m},1000);
+}
+var time = setInterval(right,2000);
+$(".choice3").hover(function(){
+	clearInterval(time);
+},function(){
+	time = setInterval(right,2000);
+})
+$(".btn_left").click(function(){
+	if(m<8){
+		m=m+1;
+	}else{
+		$(".photo").css({marginLeft:0});
+		m=1;
+	}
+	$(".photo").animate({marginLeft:-120*m},1000);
+})
+$(".btn_right").click(function(){
+	if(m>0){
+		m=m-1;
+	}else{
+		$(".photo").css({marginLeft:-120*8});
+		m=8;
+	}$(".photo").animate({marginLeft:-120*m},1000);
+})
+</script>
+
+<!--页脚-->
+<div class="footer_box">
+	<div class="footer">
+    	<ul class="footer_1">
+        <li><a href="">首页｜</a></li>
+        <li><a href="">公司简介｜</a></li>
+        <li><a href="">易叉商城｜</a></li>
+        <li><a href="">入驻易叉｜</a></li>
+        <li><a href="">新闻资讯｜</a></li>
+        <li><a href="">联系我们｜</a></li>
+        <li><a href="">客户反馈</a></li>
+        </ul>
+        <div class="footer_2"></div>
+        <div class="contact_box">
+        	<p>地址：宁波市高新区软件产业园800号604室</p><br>
+            <p>电话：400-1616-986&nbsp;传真：0574-89076797</p><br>
+            <p>联系人：姚经理</p>    
+        </div>
+        <div class="copy_box">
+       	 	<a><span style="font-family:Arial;">Copyright © Nbyskj All Rights Reserved</span> 浙备2015号<br>
+<span style="font-family:Arial;">Powered by Nbyskj ShopBuy 0.0 © 2011-2015 Nbyskj Inc.</span></a>
+		</div>
+    </div>
+ 
+</div>
+</div>
+</body>
+</html>
