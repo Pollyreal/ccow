@@ -11,3 +11,5 @@ input,html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre
 body{line-height: 1;}
 ol,ul{list-style: none;}
 a img{vertical-align:middle;}
+body{background-color: #f5f5f5 !important; font-family: "Microsoft Yahei",tahoma,arial,sans-serif;}
+a{text-decoration:none;}

@@ -1,0 +1,70 @@
+/**********right part*****************/
+.right-main{
+	padding: 0em;
+}
+.right-main>div{
+	padding: 4px 6px 4px 10px;
+	line-height: 1.5em;
+	border-radius: 5px;
+	-moz-border-radius:5px; 
+	border: 1px solid #dfdfdf;
+	background-color: #fff;
+	margin-top: 0.5em;
+}
+.right-main>div:nth-child(1){
+	border: none;
+	background:none;
+}
+.right-main>div:nth-child(2){
+	border: none;
+	background:none;
+	padding: 0em;
+}
+
+.right-main>.search>.s-input{
+	width: 40%;
+	max-width: 320px;
+	height: 32px;
+	font:16px/18px arial;
+	margin: 6px;
+	border: 1px solid #dfdfdf;
+	background-color: #fff;
+}
+.s-btn{
+	position: relative;
+	vertical-align: top;
+	top: 6px;
+	left: -11px;
+	width: 38px;
+	height: 34px;
+	background: url(../images/pic.png) no-repeat;
+	background-position: -150px -0px;
+	cursor: pointer;
+}
+/*it's a common button style*/
+.adduser{
+	margin-left:90%;
+	margin-bottom: 1em;
+	width: 80px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 3px;
+	color: #ccf;
+	background-color: #66c;
+}
+.adduser:hover{
+	background-color: #33c;
+}
+/*this common button style end*/
+
+.tb-users{
+	margin:-0.6em 1em 1em 1em;
+}
+.tb-users,.tb-users td,.tb-users th{
+	border:1px solid #dfdfdf;
+	border-collapse: collapse;
+}
+.tb-users th{
+	padding: 0 2em;
+}
+/**********right part*****************/

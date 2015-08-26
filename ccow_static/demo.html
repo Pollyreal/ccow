@@ -1,0 +1,52 @@
+<html >
+<head>  
+<meta charset="utf-8"/>  
+    <title>back-end</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/header-nav.css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <!--<script type="text/javascript">
+        $(function () {
+            layoutrezise();
+            AutoHeight();
+        })
+        function layoutrezise() {
+            var headerH = $("header").height();
+            var footerH = $("footer").height();
+            var bodyerH = $(window).height() - headerH - footerH;
+            $("div#Bodybox,div#bleftBox,div#brightBox,iframe#leftiframe,iframe#mainframe").height(bodyerH);
+            $("div#brightBox").width($(window).width() - $("div#bleftBox").width());
+        }
+        function AutoHeight() {
+            $(window).resize(function () {
+                layoutrezise();
+            })
+        }        
+    </script>-->
+</head>
+<body>
+    <header>
+        <div class="header-wrap fm970">
+            <ul>
+                <li class="site-logo"></li>
+                <li class="wrap-welcome">
+
+                    <p>欢迎回来！</p>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="Bodybox" class="fm970">
+        <div id="bleftBox" >
+            <iframe id="leftiframe" name="leftiframe" src="leftNav.html"></iframe>
+        </div>
+        <div id="brightBox">
+            <iframe id="mainframe" name="mainframe" src="user.html"></iframe>
+        </div>
+<!--         <div class="clear"></div> -->
+    </div>
+    <footer>
+        <p>@2015 yicha</p>
+    </footer> 
+</body>
+</html>

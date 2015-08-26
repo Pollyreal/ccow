@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2008                    */
-/* Created on:     2015/8/7 11:47:20                            */
+/* Created on:     2015/8/12 10:37:10                           */
 /*==============================================================*/
 
 
@@ -33,13 +33,6 @@ alter table NEWS_SECTION
 go
 
 if exists (select 1
-   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
-   where r.fkeyid = object_id('"USER"') and o.name = 'FK_USER_REFERENCE_USER_ROL')
-alter table "USER"
-   drop constraint FK_USER_REFERENCE_USER_ROL
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('COMMENTS')
             and   type = 'U')
@@ -65,13 +58,6 @@ if exists (select 1
            where  id = object_id('"USER"')
             and   type = 'U')
    drop table "USER"
-go
-
-if exists (select 1
-            from  sysobjects
-           where  id = object_id('USER_ROLE')
-            and   type = 'U')
-   drop table USER_ROLE
 go
 
 /*==============================================================*/
@@ -112,7 +98,7 @@ go
 /* Table: NEWS_SECTION                                          */
 /*==============================================================*/
 create table NEWS_SECTION (
-   SecId                int                  not null,
+   SecId                int                  identity,
    AdminId              int                  null,
    UpperId              int                  null,
    SecName              varchar(50)          null,
@@ -130,18 +116,8 @@ create table "USER" (
    AdminId              int                  identity,
    Admin                varchar(50)          not null,
    UserPwd              binary(20)           not null,
-   RoleId               int                  null,
+   RoleNo               int                  null,
    constraint PK_USER primary key nonclustered (AdminId)
-)
-go
-
-/*==============================================================*/
-/* Table: USER_ROLE                                             */
-/*==============================================================*/
-create table USER_ROLE (
-   RoleId               int                  not null,
-   RoleName             varchar(50)          null,
-   constraint PK_USER_ROLE primary key nonclustered (RoleId)
 )
 go
 
@@ -163,10 +139,5 @@ go
 alter table NEWS_SECTION
    add constraint FK_NEWS_SEC_REFERENCE_USER foreign key (AdminId)
       references "USER" (AdminId)
-go
-
-alter table "USER"
-   add constraint FK_USER_REFERENCE_USER_ROL foreign key (RoleId)
-      references USER_ROLE (RoleId)
 go
 
